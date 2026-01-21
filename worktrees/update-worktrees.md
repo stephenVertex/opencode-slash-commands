@@ -14,6 +14,7 @@ Steps:
 
 3. Find recent pull requests:
    - Run `gh pr list --author=@me --state=open --json number,title,url,createdAt,headRefName --limit 5`
+   - Also check recently closed pull requests `gh pr list --author=@me --state=merged --json number,title,url,mergedAt,headRefName --limit 10` because if I have merged it, then we can remove the worktree
    - Display the PRs sorted by most recent
    - Highlight the most recently created PR as the likely candidate for merging
    - Show the PR URL so user can review it
